@@ -1,4 +1,3 @@
-import "@bizfe/biz-mobile-ui/src/styles/app.less";
 import './styles/app.less';
 import React from 'react';
 import ReactDOM from 'react-dom';

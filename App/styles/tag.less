@@ -1,3 +1,51 @@
 .tag-container {
-
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .header{
+    height: 50px;
+    line-height: 50px;
+    background: @blue-500;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+  }
+  .tags{
+    flex: 1;
+    padding-right: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    span{
+      background: @grey-400;
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 15px 0 0 15px;
+      border: 1px solid @grey-600;
+      border-radius: 5px;
+      color: #ffffff;
+    }
+    .active{
+      background: @blue-500;
+      border: 1px solid @blue-500;
+    }
+  }
+  .start{
+    height: 150px;
+    text-align: center;
+    a{
+      display: inline-block;
+      margin-top: 20px;
+      width: 80px;
+      height: 80px;
+      line-height: 80px;
+      font-size: 18px;
+      border-radius: 50%;
+      color: #FFFFFF;
+      background-color: @blue-500;
+      :active{
+        opacity: 0.8;
+      }
+    }
+  }
 }
