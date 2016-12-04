@@ -1,9 +1,10 @@
 .chat-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     background: #F2F2F2;
+    height: 100%;
     .chat-time {
         margin-top: 14px;
         background: #D1D1D1;
@@ -32,14 +33,14 @@
         }
 
         .chat-msg {
-            :before {
+            &:before {
                 content: '';
                 display: inline-flex;
                 width: 0;
                 height: 0;
                 border-width: 8px;
                 border-style: solid;
-                border-color: transparent  white transparent  transparent ;
+                border-color: transparent  white transparent transparent!important;
                 position: absolute;
                 top: 10px;
                 left: -14px;
@@ -74,7 +75,7 @@
         }
 
         .chat-msg {
-            :after {
+            &:after {
                 content: '';
                 display: inline-flex;
                 width: 0;
@@ -98,6 +99,10 @@
             line-height: 18px;
         }
     }
+}
+
+a:visited {
+    color: rgb(0, 0, 238)
 }
 
 
