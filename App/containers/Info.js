@@ -8,9 +8,7 @@ import Comment from '../components/commentBox/Comment'
 export default class Info extends Component {
     constructor(props) {
         super(props)
-        this.state = {
-         args: props.args
-        }
+
         this.data = [
             {},
             {
@@ -78,11 +76,11 @@ export default class Info extends Component {
 
         return (
             <div className="info-container">
-                <CommentBanner imgSrc={this.data[this.state.args].bannerSrc}/>
+                <CommentBanner imgSrc={this.data[name].bannerSrc}/>
                 <div>
                     <span>评论列表：</span>
                     {
-                        this.data[this.state.args].commentList.map((comment, index) =>
+                        this.data[name].commentList.map((comment, index) =>
                             <Comment
                                 logoSrc={comment.logoSrc}
                                 publishTime={comment.publishTime}
