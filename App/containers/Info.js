@@ -42,7 +42,7 @@ export default class Chat extends Component {
 
         return (
             <div className="info-container">
-                <CommentBanner imgSrc="https://www.sogou.com/doodle/2016/billboard/images/logo_billboard.gif"/>
+                <CommentBanner imgSrc="http://s.visitbeijing.com.cn/uploadfile/2013/0225/20130225063953566.jpg"/>
                 <div>
                     <span>评论列表：</span>
                     {
