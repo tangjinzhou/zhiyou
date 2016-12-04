@@ -26,7 +26,7 @@ export default class Tag extends React.Component {
                     )}
                 </div>
                 <div className="start">
-                    <a href="#/start">开始</a>
+                    <a href="#/start">Start</a>
                 </div>
             </div>
         )
