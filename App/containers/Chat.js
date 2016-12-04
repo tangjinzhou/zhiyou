@@ -1,11 +1,13 @@
 import React from 'react'
+const date = new Date(),
+    nowTime = `${date.getFullYear()}-${date.getMonth()+1}-${date.getDate()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
 
 export default class Chat extends React.Component {
     state= {
         display1: 'none',
         display2: 'none',
         display3: 'none',
-        display4: 'none'
+        display4: 'none',
     }
     componentDidMount() {
         window.setTimeout(()=>{
@@ -51,7 +53,7 @@ export default class Chat extends React.Component {
         return (
             <div className="chat-container">
                 <div className="chat-time" style={{display: display1}}>
-                    <span>2016-11-17 18:26</span>
+                    <span>{nowTime}</span>
                 </div>
                 <div className="chat-content-right" style={{display: display1}}>
                     <div className="chat-msg">
