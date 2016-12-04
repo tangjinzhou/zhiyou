@@ -244,6 +244,14 @@ export default class Map extends React.Component {
 
     }
 
+    goChat (){
+        let dong = document.getElementById('Dong');
+        dong.play();
+        setTimeout(function(){
+            location.href="/chat/";
+        }, 500);
+    }
+
     // echo = () => {
     //     console.log(JSON.stringify(this.points, null,4));
     //     console.log(this.map);
@@ -254,13 +262,13 @@ export default class Map extends React.Component {
         const {style, params: {name}} = this.props;
         return (
             <div className="map-container">
-                <div className="Cover"></div>
                 <div id="MapGuide" ref={(c)=>this.mapDom = c} ></div>
                 <a id="ImgShow1" className="imgShow" href="/info/1"></a>
                 <a id="ImgShow2" className="imgShow" href="/info/2"></a>
                 <a id="ImgShow3" className="imgShow" href="/info/3"></a>
                 <div className="tip-container">
-                    <a id="bars" href="/chat/">
+                    <a id="bars" href="javascript:;" onClick={this.goChat}>
+                        <audio src="/App/audio/dongdong.mp3" id="Dong" />
                         <div className="bar"></div>
                         <div className="bar"></div>
                         <div className="bar"></div>
