@@ -10,7 +10,6 @@ import Start from './containers/Start'
 import Map from './containers/Map'
 import Chat from './containers/Chat'
 import Info from './containers/Info'
-
 ReactDOM.render(
     <Router history={hashHistory}>
         <Route path="/" component={App}>
