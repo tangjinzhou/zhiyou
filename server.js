@@ -15,6 +15,7 @@ var compiler = webpack(config);
 app.use(require('webpack-dev-middleware')(compiler, {
     noInfo: true,
     //contentBase: __dirname,
+    historyApiFallback: true,
     lazy: false,
     watchOptions: {
         aggregateTimeout: 30,
@@ -40,7 +41,11 @@ app.get('/', function(req, res) {
 });
 
 app.get('/*', function(req, res) {
-    res.sendFile(path.join(__dirname, req.url));
+    if(req.url.split('.').length == 2) {
+        res.sendFile(path.join(__dirname, req.url));
+    } else {
+        res.sendFile(path.join(__dirname, 'index.html'));
+    }
 });
 
 app.listen(3333, function(err) {
