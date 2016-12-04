@@ -12,17 +12,17 @@ export default class Info extends Component {
         this.data = [
             {},
             {
-                bannerSrc:'http://www.hall.tsinghua.edu.cn/upload_files/image/1396753073355_3F.jpg',
+                bannerSrc:require('../img/logosrc1.jpg'),
                 commentList:[
                     {
-                        logoSrc:'http://p0.meituan.net/userheadpicbackend/7c47efe0682a30204c8cb776e72353413325.jpg%4048w_48h_1e_1c_1l',
+                        logoSrc:require('../img/icon1.jpg'),
                         publishTime:'1天前',
                         likeNum:5,
                         userName:'小妞悠然',
                         msg:'蒙民伟音乐厅和新清华学堂什么关系？我要是去蒙民伟音乐厅是从哪里进去，从新清华学堂的门进去么',
                         containsAudio:0
                     },{
-                        logoSrc:'http://p1.meituan.net/userheadpicbackend/7814e7746e46d0dfe0b4fb9a5fcc718962433.jpg%40120w_120h_1e_1c_1l',
+                        logoSrc:require('../img/icon2.jpg'),
                         publishTime:'一天前',
                         likeNum:5,
                         userName:'镌凌JL',
@@ -31,17 +31,17 @@ export default class Info extends Component {
                     }
                 ]
             },{
-                bannerSrc:'http://hx.cnd.org/files/2015/04/exm9-300x231.jpg',
+                bannerSrc:require('../img/logosrc2.jpg'),
                 commentList:[
                     {
-                        logoSrc:'http://p0.meituan.net/userheadpicbackend/7c47efe0682a30204c8cb776e72353413325.jpg%4048w_48h_1e_1c_1l',
+                        logoSrc:require('../img/icon1.jpg'),
                         publishTime:'1天前',
                         likeNum:5,
                         userName:'小妞悠然',
                         msg:'二校门为清华最早的主校门，始建于1909年',
                         containsAudio:1
                     },{
-                        logoSrc:'http://p1.meituan.net/userheadpicbackend/7814e7746e46d0dfe0b4fb9a5fcc718962433.jpg%40120w_120h_1e_1c_1l',
+                        logoSrc:require('../img/icon2.jpg'),
                         publishTime:'一天前',
                         likeNum:5,
                         userName:'镌凌JL',
@@ -50,17 +50,17 @@ export default class Info extends Component {
                     }
                 ]
             },{
-                bannerSrc:'https://drscdn.500px.org/photo/131297417/q%3D80_m%3D1500/22409cb7daec956f59ec63ffaec3f3b1',
+                bannerSrc:require('../img/logosrc3.jpg'),
                 commentList:[
                     {
-                        logoSrc:'http://p0.meituan.net/userheadpicbackend/7c47efe0682a30204c8cb776e72353413325.jpg%4048w_48h_1e_1c_1l',
+                        logoSrc:require('../img/icon1.jpg'),
                         publishTime:'1天前',
                         likeNum:5,
                         userName:'小妞悠然',
                         msg:'古董建筑，文艺色彩浓重。见证了一批又一批的清华学子。',
                         containsAudio:1
                     },{
-                        logoSrc:'http://p1.meituan.net/userheadpicbackend/7814e7746e46d0dfe0b4fb9a5fcc718962433.jpg%40120w_120h_1e_1c_1l',
+                        logoSrc:require('../img/icon2.jpg'),
                         publishTime:'一天前',
                         likeNum:5,
                         userName:'镌凌JL',
