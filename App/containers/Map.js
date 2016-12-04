@@ -39,6 +39,8 @@ export default class Map extends React.Component {
         this.flightPath(this.map);
         this.guideShow(this.map);
         // this.search(map);
+
+        this.music.play();
     }
 
     getPoint (map) {
@@ -244,9 +246,8 @@ export default class Map extends React.Component {
 
     }
 
-    goChat (){
-        let dong = document.getElementById('Dong');
-        dong.play();
+    goChat = () => {
+        this.dong.play();
         setTimeout(function(){
             location.href="/chat/";
         }, 500);
@@ -262,13 +263,14 @@ export default class Map extends React.Component {
         const {style, params: {name}} = this.props;
         return (
             <div className="map-container">
+                <audio src="/App/audio/music.m4a" id="backAudio" ref={(c)=>this.music = c}/>
                 <div id="MapGuide" ref={(c)=>this.mapDom = c} ></div>
                 <a id="ImgShow1" className="imgShow" href="/info/1"></a>
                 <a id="ImgShow2" className="imgShow" href="/info/2"></a>
                 <a id="ImgShow3" className="imgShow" href="/info/3"></a>
                 <div className="tip-container">
                     <a id="bars" href="javascript:;" onClick={this.goChat}>
-                        <audio src="/App/audio/dongdong.mp3" id="Dong" />
+                        <audio src="/App/audio/dongdong.mp3" id="Dong" ref={(c)=>this.dong = c}/>
                         <div className="bar"></div>
                         <div className="bar"></div>
                         <div className="bar"></div>
