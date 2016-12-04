@@ -14,26 +14,30 @@ export default class Chat extends Component {
                 publishTime:'3天前',
                 likeNum:5,
                 userName:'用户名字',
-                msg:'aa'
+                msg:'aa',
+                containsAudio:0
             },
             {
                 logoSrc:'http://www.techug.com/wordpress/wp-content/uploads/2016/10/1430389374744961.jpg',
                 publishTime:'3天前',
                 likeNum:5,
                 userName:'用户名字',
-                msg:'这是信息主体这是信息主体这是信息主体这是信息主体这是信息主体这是信息主体'
+                msg:'这是信息主体这是信息主体这是信息主体这是信息主体这是信息主体这是信息主体',
+                containsAudio:1
             },{
                 logoSrc:'http://www.techug.com/wordpress/wp-content/uploads/2016/10/1430389374744961.jpg',
                 publishTime:'3天前',
                 likeNum:5,
                 userName:'用户名字',
-                msg:'这是信息主体这是信息主体这是信息主体这是信息主体这是信息主体这是信息主体'
+                msg:'这是信息主体这是信息主体这是信息主体这是信息主体这是信息主体这是信息主体',
+                containsAudio:1
             },{
                 logoSrc:'http://www.techug.com/wordpress/wp-content/uploads/2016/10/1430389374744961.jpg',
                 publishTime:'3天前',
                 likeNum:0,
                 userName:'用户名字',
-                msg:'这是信息主体这是信息主体这是信息主体这是信息主体这是信息主体这是信息主体'
+                msg:'这是信息主体这是信息主体这是信息主体这是信息主体这是信息主体这是信息主体',
+                containsAudio:0
             }
         ]
     }
@@ -54,6 +58,7 @@ export default class Chat extends Component {
                                 userName={comment.userName}
                                 msg={comment.msg}
                                 key={index}
+                                containsAudio={comment.containsAudio}
                             />
                         )
                     }

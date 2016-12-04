@@ -5,14 +5,14 @@ import CommentUserName from './CommentUserName'
 import CommentLikeBtn from './CommentLikeBtn'
 import CommentMsg from './CommentMsg'
 import CommentPublishTime from './CommentPublishTime'
-
+import CommentAudioPlay from './CommentAudioPlay'
 export default class Comment extends Component {
     constructor(props) {
         super(props)
     }
 
     render() {
-        const {logoSrc, publishTime, likeNum, userName, msg} = this.props
+        const {logoSrc, publishTime, likeNum, userName, msg, containsAudio} = this.props
         return(
             <div className="comment-box">
                 <CommentUserLogo logoSrc={logoSrc}/>
@@ -28,6 +28,9 @@ export default class Comment extends Component {
                         <CommentPublishTime publishTime={publishTime}/>
                     </div>
                 </div>
+                {
+                    containsAudio == 1?<CommentAudioPlay/>:null
+                }
             </div>
         )
     }
