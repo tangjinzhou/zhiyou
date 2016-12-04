@@ -3,7 +3,7 @@ var FastClick = require('fastclick');
 FastClick.attach(document.body);
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, hashHistory } from 'react-router';
+import { Router, Route, browserHistory } from 'react-router';
 import App from './containers/App'
 import Tag from './containers/Tag'
 import Start from './containers/Start'
@@ -11,7 +11,7 @@ import Map from './containers/Map'
 import Chat from './containers/Chat'
 import Info from './containers/Info'
 ReactDOM.render(
-    <Router history={hashHistory}>
+    <Router history={browserHistory}>
         <Route path="/" component={App}>
             <Route path="tag" component={Tag}/>
             <Route path="start" component={Start}/>
