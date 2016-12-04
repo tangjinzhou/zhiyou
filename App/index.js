@@ -17,7 +17,7 @@ ReactDOM.render(
             <Route path="start" component={Start}/>
             <Route path="map" component={Map}/>
             <Route path="chat" component={Chat}/>
-            <Route path="info" component={Info}/>
+            <Route path="info(/:name)" component={Info}/>
             <Route path="**" component={Tag}/>
         </Route>
     </Router>,

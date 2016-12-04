@@ -16,13 +16,17 @@ export default class Start extends React.Component {
             title: '清华大学'
         });
     }
+    go(){
+        location.href = '#/map'
+        location.reload()
+    }
     render() {
         return (
             <div className="start-container">
                 <header className="header">搜狗地图</header>
                 <div ref={(c)=>this.mapDom = c} className="map_canvas"></div>
                 <div className="btn-con">
-                    <a href="#/map" className="btn">Go!</a>
+                    <a href="javascript:;" onClick={this.go} className="btn">Go!</a>
                 </div>
             </div>
         )
