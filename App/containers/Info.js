@@ -10,11 +10,11 @@ export default class Chat extends Component {
         super(props)
         this.commentList = [
             {
-                logoSrc:'http://www.techug.com/wordpress/wp-content/uploads/2016/10/1430389374744961.jpg',
+                logoSrc:'http://www.atsbv.com/uploads/allimg/120830/1A31CR6-0.png',
                 publishTime:'3天前',
                 likeNum:5,
                 userName:'用户名字',
-                msg:'这是信息主体这是信息主体这是信息主体这是信息主体这是信息主体这是信息主体'
+                msg:'aa'
             },
             {
                 logoSrc:'http://www.techug.com/wordpress/wp-content/uploads/2016/10/1430389374744961.jpg',
@@ -31,7 +31,7 @@ export default class Chat extends Component {
             },{
                 logoSrc:'http://www.techug.com/wordpress/wp-content/uploads/2016/10/1430389374744961.jpg',
                 publishTime:'3天前',
-                likeNum:5,
+                likeNum:0,
                 userName:'用户名字',
                 msg:'这是信息主体这是信息主体这是信息主体这是信息主体这是信息主体这是信息主体'
             }
@@ -42,8 +42,9 @@ export default class Chat extends Component {
 
         return (
             <div className="info-container">
-                <CommentBanner imgSrc="https://www.sogou.com/doodle/2016/billboard/images/logo_billboard.gif"/>
+                <CommentBanner imgSrc="http://s.visitbeijing.com.cn/uploadfile/2013/0225/20130225063953566.jpg"/>
                 <div>
+                    <span>评论列表：</span>
                     {
                         this.commentList.map((comment, index) =>
                             <Comment
