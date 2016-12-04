@@ -15,6 +15,10 @@ export default class Map extends React.Component {
         this.renderMap();
     }
 
+    // componentDidUpdate (){
+    //     this.flightPath(this.map);
+    // }
+
     renderMap () {
         let myLatlng = new sogou.maps.Point(12949019.7, 4838179.33);
         let myOptions = {
@@ -240,22 +244,23 @@ export default class Map extends React.Component {
 
     }
 
-    echo = () => {
-        // console.log(JSON.stringify(this.points, null,4));
-        // console.log(this.map);
-        // this.flightPath(this.map);
-    }
+    // echo = () => {
+    //     console.log(JSON.stringify(this.points, null,4));
+    //     console.log(this.map);
+    //     this.flightPath(this.map);
+    // }
 
     render() {
         const {style, params: {name}} = this.props;
         return (
             <div className="map-container">
+                <div className="Cover"></div>
                 <div id="MapGuide" ref={(c)=>this.mapDom = c} ></div>
-                <a id="ImgShow1" className="imgShow" href="#/info/1"></a>
-                <a id="ImgShow2" className="imgShow" href="#/info/2"></a>
-                <a id="ImgShow3" className="imgShow" href="#/info/3"></a>
+                <a id="ImgShow1" className="imgShow" href="/info/1"></a>
+                <a id="ImgShow2" className="imgShow" href="/info/2"></a>
+                <a id="ImgShow3" className="imgShow" href="/info/3"></a>
                 <div className="tip-container">
-                    <div id="bars">
+                    <a id="bars" href="/chat/">
                         <div className="bar"></div>
                         <div className="bar"></div>
                         <div className="bar"></div>
@@ -266,8 +271,8 @@ export default class Map extends React.Component {
                         <div className="bar"></div>
                         <div className="bar"></div>
                         <div className="bar"></div>
-                    </div>
-                    <div className="tip" onClick={this.echo}>正在为您导游</div>
+                    </a>
+                    <div className="tip">正在为您导游</div>
                 </div>
             </div>
         )
