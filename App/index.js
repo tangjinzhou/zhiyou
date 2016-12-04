@@ -1,4 +1,6 @@
 import './styles/app.less';
+var FastClick = require('fastclick');
+FastClick.attach(document.body);
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, hashHistory } from 'react-router';
