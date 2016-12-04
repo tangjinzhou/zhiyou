@@ -52,7 +52,6 @@ export default class Chat extends React.Component {
                 });
                 break;
             case 5 :
-                window.scroll(0,300);
                 this.setState({
                     display5: 'flex'
                 });
