@@ -23,7 +23,6 @@ export default class Start extends React.Component {
     render() {
         return (
             <div className="start-container">
-                <header className="header">搜狗地图</header>
                 <div ref={(c)=>this.mapDom = c} className="map_canvas"></div>
                 <div className="btn-con">
                     <a href="javascript:;" onClick={this.go} className="btn">Go!</a>
