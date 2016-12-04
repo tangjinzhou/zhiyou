@@ -26,7 +26,7 @@ var devConfigExtension = {
             'react-hot-loader/patch',*/
             './App/index.js'
         ],
-       // hotReload: ['webpack-hot-middleware/client'],
+        //hotReload: ['webpack-hot-middleware/client'],
         //dllVendor: './dist/dll.vendor.js'
         //vendor:['react','react-dom', 'classnames', 'lodash'],
         //dev: ['html-entities', 'react-transform-hmr','react-transform-catch-errors','redbox-react','react-proxy','webpack-hot-middleware/client']
@@ -46,7 +46,7 @@ var devConfigExtension = {
     },
     output: {
         filename: '[name].js',
-        publicPath: "/dist"
+        publicPath: "/dist/"
     },
 
     // more options here: http://webpack.github.io/docs/configuration.html#devtool
