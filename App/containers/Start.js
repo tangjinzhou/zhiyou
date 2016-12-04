@@ -23,7 +23,7 @@ export default class Start extends React.Component {
         //let dong = document.getElementById('Dong');
         this.dong.play();
         setTimeout(function(){
-            location.href="/chat/";
+            location.href="/map";
         }, 500);
     }
     render() {
