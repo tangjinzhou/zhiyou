@@ -1,3 +1,99 @@
 .chat-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #F2F2F2;
+    .chat-time {
+        margin-top: 14px;
+        background: #D1D1D1;
+        border-radius: 4px;
+        font-family: STHeitiSC-Light;
+        font-size: 14px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        padding: 3px 12px;
+    }
+    .chat-content-left {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        margin-bottom: 16px;
+        padding: 0 15px;
+        .chat-img{
+            margin-right: 13px;
+            img{
+                width: 38px;
+                height: 38px;
+                border-radius: 19px;
+            }
+        }
 
+        .chat-msg {
+            :before {
+                content: '';
+                display: inline-flex;
+                width: 0;
+                height: 0;
+                border-width: 8px;
+                border-style: solid;
+                border-color: transparent  white transparent  transparent ;
+                position: absolute;
+                top: 10px;
+                left: -14px;
+            }
+            position: relative;
+            padding: 10px;
+            background: #FFFFFF;
+            border: 1px solid #DDDDDD;
+            border-radius: 4px;
+            font-family: PingFang-SC-Regular;
+            font-size: 18px;
+            color: #2E2E2E;
+            letter-spacing: 0;
+            line-height: 18px;
+        }
+    }
+    .chat-content-right {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        margin-bottom: 16px;
+        padding: 0 15px;
+        .chat-img{
+            margin-left: 13px;
+            img{
+                width: 38px;
+                height: 38px;
+                border-radius: 19px;
+            }
+        }
+
+        .chat-msg {
+            :after {
+                content: '';
+                display: inline-flex;
+                width: 0;
+                height: 0;
+                border-width: 8px;
+                border-style: solid;
+                border-color: transparent transparent transparent white;
+                position: absolute;
+                top: 10px;
+                right: -14px;
+            }
+            position: relative;
+            padding: 10px;
+            background: #FFFFFF;
+            border: 1px solid #DDDDDD;
+            border-radius: 4px;
+            font-family: PingFang-SC-Regular;
+            font-size: 18px;
+            color: #2E2E2E;
+            letter-spacing: 0;
+            line-height: 18px;
+        }
+    }
 }
+
+
