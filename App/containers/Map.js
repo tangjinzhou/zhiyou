@@ -40,7 +40,7 @@ export default class Map extends React.Component {
         this.guideShow(this.map);
         // this.search(map);
 
-        this.music.play();
+        // this.music.play();
     }
 
     getPoint (map) {
@@ -253,6 +253,10 @@ export default class Map extends React.Component {
         }, 500);
     }
 
+    playMusic = () => {
+        this.music.play();
+    }
+
     // echo = () => {
     //     console.log(JSON.stringify(this.points, null,4));
     //     console.log(this.map);
@@ -262,7 +266,7 @@ export default class Map extends React.Component {
     render() {
         const {style, params: {name}} = this.props;
         return (
-            <div className="map-container">
+            <div className="map-container" onClick={this.playMusic}>
                 <audio src="/App/audio/music.m4a" id="backAudio" ref={(c)=>this.music = c}/>
                 <div id="MapGuide" ref={(c)=>this.mapDom = c} ></div>
                 <a id="ImgShow1" className="imgShow" href="/info/1"></a>
