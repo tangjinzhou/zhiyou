@@ -52,6 +52,7 @@ export default class Chat extends React.Component {
                 });
                 break;
             case 5 :
+                window.scroll(0, 220);
                 this.setState({
                     display5: 'flex'
                 });
@@ -107,8 +108,8 @@ export default class Chat extends React.Component {
                     </div>
                     <div className="chat-msg">
                         <span>当前位置是极佳拍照地点，已为您推荐优秀照片模板，拍张照吧！</span><br/>
-                        <img src="/App/img/tsinghua1.png" style={{width:'240px', height: '240px'}}/>
-                        <img src="/App/img/tsinghua2.png" style={{width:'240px', height: '240px'}}/>
+                        <img src="/App/img/tsinghua1.png" style={{width:'45%', height: 'auto'}}/>
+                        <img src="/App/img/tsinghua2.png" style={{width:'55%', height: 'auto'}}/>
 
                     </div>
                 </div>
