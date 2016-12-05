@@ -23,7 +23,7 @@ export default class Info extends Component {
                         containsAudio:0
                     },{
                         logoSrc:require('../img/icon2.jpg'),
-                        publishTime:'一天前',
+                        publishTime:'2天前',
                         likeNum:5,
                         userName:'镌凌JL',
                         msg:'几乎没有节目，去的话还要证件，一个不很亲民的音乐厅。校内学生的话到时可以买打折票。另外里头的环境真心好，肯定是花了',
@@ -42,7 +42,7 @@ export default class Info extends Component {
                         containsAudio:1
                     },{
                         logoSrc:require('../img/icon2.jpg'),
-                        publishTime:'一天前',
+                        publishTime:'2天前',
                         likeNum:5,
                         userName:'镌凌JL',
                         msg:'几1933年，校园扩建，园墙外移，有了新的大门（即西校门）。此后，这座最早的校门就被称之为二校门。春夏秋冬，年年岁岁，时光荏苒，矗立在校园主干道上的二校门，在风雨中，默默见证着清华大学的历史与发展。它不仅仅是清华园的鲜明标志，更是长期以来清华人勤奋求实、荣辱不惊之品格的象征。',
@@ -61,7 +61,7 @@ export default class Info extends Component {
                         containsAudio:1
                     },{
                         logoSrc:require('../img/icon2.jpg'),
-                        publishTime:'一天前',
+                        publishTime:'2天前',
                         likeNum:5,
                         userName:'镌凌JL',
                         msg:'大礼堂位于清华二校门以北，大草坪的正北端古城堡风格的大圆顶，门前有四根汉白玉大柱子柱。体设计规范而大气，充满庄严的感觉。大礼堂现在作为“清华大学早期建筑”的一部分，被列为全国重点文物保护单位',
